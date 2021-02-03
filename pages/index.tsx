@@ -113,7 +113,7 @@ const index: React.FC<Iindex & WithStyles<typeof styles>> = ({ classes }) => {
                 value={formik.values.playlistID}
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
-                label="playlist ID"
+                label="playlist link or playlist ID"
                 error={
                   formik.touched.playlistID && Boolean(formik.errors.playlistID)
                 }
@@ -160,7 +160,7 @@ const index: React.FC<Iindex & WithStyles<typeof styles>> = ({ classes }) => {
       <Grid item container justifyContent="center" className={classes.marginY}>
         <Typography className={css.credit} variant="body1" color="primary">
           Made with React. <br />
-          Fork and Star
+          Please Fork and Star at
           <br />
           <a
             href="http://github.com/irfan7junior/utube-playtime"
