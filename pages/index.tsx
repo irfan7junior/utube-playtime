@@ -30,7 +30,7 @@ import Head from 'next/head'
 import { CLIENT_WEBSITE } from 'src/defaults'
 
 const validationSchema = yup.object({
-  playlistID: yup.string().required('Youtube Playlist ID is required'),
+  playlistID: yup.string().required('Youtube Playlist ID or Link is required'),
 })
 
 export interface Iindex {}
@@ -113,7 +113,7 @@ const index: React.FC<Iindex & WithStyles<typeof styles>> = ({ classes }) => {
         <link rel="canonical" key="canonical" href={CLIENT_WEBSITE} />
       </Head>
       <Typography variant="h1" color="secondary" paragraph>
-        Get the Playtime of an Youtube Playlist.
+        Get the Playtime of a Youtube Playlist.
       </Typography>
       <Container maxWidth="sm">
         <form onSubmit={(event) => formik.handleSubmit(event)}>
