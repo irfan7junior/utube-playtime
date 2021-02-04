@@ -26,6 +26,8 @@ import { DurationResponseType, stateFalse, stateTrue } from 'src/defaultState'
 import DurationDetails from 'src/components/DurationDetails'
 import axios from 'axios'
 import { Close as CloseIcon } from '@material-ui/icons'
+import Head from 'next/head'
+import { CLIENT_WEBSITE } from 'src/defaults'
 
 const validationSchema = yup.object({
   playlistID: yup.string().required('Youtube Playlist ID is required'),
@@ -99,6 +101,17 @@ const index: React.FC<Iindex & WithStyles<typeof styles>> = ({ classes }) => {
 
   return (
     <Container maxWidth="md">
+      <Head>
+        <title key="title">Utube Playtime</title>
+        <meta
+          name="description"
+          key="description"
+          content="Get total playtime of a Youtube playlist."
+        />
+        <meta property="og:title" content="Utube Playtime" key="og:title" />
+        <meta property="og:url" key="og:url" content={CLIENT_WEBSITE} />
+        <link rel="canonical" key="canonical" href={CLIENT_WEBSITE} />
+      </Head>
       <Typography variant="h1" color="secondary" paragraph>
         Get the Playtime of an Youtube Playlist.
       </Typography>

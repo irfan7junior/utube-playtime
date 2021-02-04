@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
           <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
-          <meta property="og:image:alt" content="company logo" />
+          <meta property="og:image:alt" content="brand logo" />
         </Head>
         <body>
           <Main />

@@ -22,7 +22,7 @@ export default function MyApp(props: AppProps) {
   return (
     <>
       <Head>
-        <title>Moodify</title>
+        <title>Utube Playtime</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
